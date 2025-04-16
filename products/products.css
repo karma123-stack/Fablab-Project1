@@ -1,0 +1,209 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top info section */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 0; /* Remove any bottom margin */
+}
+
+/* Navbar styling */
+.navbar {
+    
+    background-color: #287acc; /* Dark background */
+    padding: 15px 20px;
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Aligns items vertically */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Navbar logo */
+.navbar-logo img {
+    height: 50px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+/* Menu container */
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Pushes the menu items to the right */
+    gap: 30px; /* Space between menu items */
+}
+
+/* Remove default list styles */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make navbar items inline */
+.menu ul li {
+    display: inline-block;
+}
+
+/* Style the links */
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.menu ul li a:hover {
+    background-color: #42a9e4; /* Yellow hover effect */
+    color: black;
+    border-radius: 5px;
+}
+.display_products{
+    text-align: center;
+    font-size: large;
+    font-size: 16px;
+    font-family: cursive;
+}
+.cards_container{
+    display: flex;
+    margin-top: 100px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(7, auto);  /* 7 rows */
+   
+}
+.product{
+    background: #287acc;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 15px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-size: small;
+    font-family: cursive;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.footer-info, .footer-time {
+    margin: 10px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .info, .navbar, .menu {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .menu {
+        gap: 10px; /* Reduce gap between menu items */
+        justify-content: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .image h2 {
+        font-size: 2em;
+        top: 50%;
+    }
+
+    .image p {
+        font-size: 1.2em;
+        top: 70%;
+    }
+
+    .description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .show {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .services h1 {
+        font-size: 36px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr); /* Change to 1 column */
+    }
+}
+
+/* Tablets and medium screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .menu {
+        gap: 15px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+
+    .image h2 {
+        font-size: 2.5em;
+        top: 60%;
+    }
+
+    .image p {
+        font-size: 1.3em;
+        top: 75%;
+    }
+
+    .description {
+        padding: 20px;
+    }
+}
+

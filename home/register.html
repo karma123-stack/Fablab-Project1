@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - CST FabLab</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="register-page">
+    <h2>Register to CST FabLab</h2>
+    <form id="registration-form">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{8,15}" title="Enter a valid phone number" />
+      <textarea id="message" rows="4" placeholder="Why do you want to join?" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>
